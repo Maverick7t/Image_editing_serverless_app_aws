@@ -57,6 +57,12 @@ See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for complete directory layout.
 
 ## 🏗️ Architecture Overview
 
+![System Architecture Diagram](images/architecture.png)
+
+**Architecture Diagram Description:**
+
+The serverless image editing application follows a modern cloud-native architecture:
+
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                    Frontend (Vite + React)               │
