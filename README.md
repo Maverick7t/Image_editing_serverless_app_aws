@@ -63,36 +63,7 @@ See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for complete directory layout.
 
 The serverless image editing application follows a modern cloud-native architecture:
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Frontend (Vite + React)               │
-│              Hosted on AWS Amplify Hosting               │
-│  - Image upload & canvas editor                          │
-│  - Mask creation interface                               │
-│  - Real-time image preview                               │
-└────────────────────┬────────────────────────────────────┘
-                     │ HTTPS (with Cognito auth)
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              API Gateway (REST API)                      │
-│              /image-edit → POST endpoint                │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│          AWS Lambda (Python)                             │
-│  - Request validation & processing                       │
-│  - Image parameter extraction                            │
-│  - Bedrock API orchestration                             │
-└────────────────────┬────────────────────────────────────┘
-                     │
-         ┌───────────┼───────────┐
-         ▼           ▼           ▼
-    ┌────────┐ ┌─────────┐ ┌──────────┐
-    │ Bedrock│ │DynamoDB │ │CloudWatch│
-    │(Titan) │ │(Logging)│ │ (Logs)   │
-    └────────┘ └─────────┘ └──────────┘
-```
+
 
 ---
 
