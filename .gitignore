@@ -80,3 +80,7 @@ Thumbs.db
 # Project specific
 config/config.js
 !config/config.example.js
+
+# Images - DO NOT IGNORE (keep images for documentation)
+!images/
+!images/**

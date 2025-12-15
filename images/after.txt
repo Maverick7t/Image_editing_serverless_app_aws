@@ -1,0 +1,5 @@
+AFTER IMAGE - Live Application
+==============================
+This screenshot shows the completed AWS Lambda-based
+image editing application running in production,
+displaying AI-generated images using Amazon Bedrock Titan.

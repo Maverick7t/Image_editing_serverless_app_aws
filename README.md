@@ -19,21 +19,16 @@ A powerful, cloud-native image editing tool built with AWS services. Edit images
 
 ---
 
-## 📊 Before & After Examples
+## 📊 Application Example
 
-### Example 1: Image Inpainting
-**Before:** Original image with mask area
-![Before Image](https://imgur.com/placeholder.png)
+### Planning to Production
+**Before:** Architecture & Design Planning
+![Before - Architecture Sketch](images/before.jpg)
 
-**After:** AI-generated inpainted content
-![After Image](https://imgur.com/placeholder.png)
+**After:** Live Application with AI-Generated Results
+![After - Live Application](images/after.png)
 
-### Example 2: Image Outpainting
-**Before:** Original photograph
-![Before Outpaint](https://imgur.com/placeholder.png)
-
-**After:** Extended canvas with generated surroundings
-![After Outpaint](https://imgur.com/placeholder.png)
+The "before" image shows the initial planning phase with architecture sketches and design documentation. The "after" image demonstrates the completed serverless application running in production, showcasing AI-powered image generation using Amazon Bedrock's Titan model. The application successfully processes user uploads and generates two high-quality image variations through the Lambda function.
 
 ---
 
